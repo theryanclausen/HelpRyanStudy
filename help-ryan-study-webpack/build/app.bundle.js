@@ -260,7 +260,7 @@ var GameScene = exports.GameScene = function (_Phaser$Scene) {
     _this.scoreText;
     _this.playerPlatformCollider;
     _this.playerCoinOverlap;
-    _this.lives = 1;
+    _this.lives = 3;
     _this.livesText;
     _this.playerCatCollider;
     _this.delayCounter = 0;
@@ -514,7 +514,7 @@ var GameScene = exports.GameScene = function (_Phaser$Scene) {
       }
       if (this.cursors.space._justUp && this.gameOver) {
         this.lambdasCollected = 0;
-        this.lives = 1;
+        this.lives = 3;
         this.gameOver = false;
         this.score = 0;
         this.delayCounter = 0;

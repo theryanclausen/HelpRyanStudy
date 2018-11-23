@@ -12,7 +12,7 @@ export class GameScene extends Phaser.Scene {
     this.scoreText;
     this.playerPlatformCollider;
     this.playerCoinOverlap;
-    this.lives = 1;
+    this.lives = 3;
     this.livesText;
     this.playerCatCollider;
     this.delayCounter = 0;
@@ -339,7 +339,7 @@ export class GameScene extends Phaser.Scene {
     }
     if(this.cursors.space._justUp && this.gameOver){
       this.lambdasCollected = 0;
-      this.lives = 1;
+      this.lives = 3;
       this.gameOver = false;
       this.score = 0;
       this.delayCounter = 0;
