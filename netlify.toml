@@ -1,0 +1,8 @@
+[Settings]
+ID = "HelpRyanStudy"
+
+[build]
+
+  base    = "./help-ryan-study-webpack"
+  publish = "./help-ryan-study-webpack/build"
+  command = "yarn webpack"
